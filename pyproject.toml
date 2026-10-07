@@ -1,0 +1,20 @@
+[project]
+name = "goat-book"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "GeertD", email = "geert2dierick@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "django<6",
+    "selenium>=4.50.0",
+]
+
+[project.scripts]
+goat-book = "goat_book:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
